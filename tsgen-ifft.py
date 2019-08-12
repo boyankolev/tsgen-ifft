@@ -47,5 +47,3 @@ RandomRDDs.uniformRDD(sc, tsnum).zipWithIndex() \
   .map( lambda (i, ts): str(i) + ',' + ','.join(["%.5f" % x for x in ts]) ) \
   .saveAsTextFile(outfile)
 
-# Example: generate of F5_2 dataset of 1000 time series of length 256:
-# python gendata_ifft.py -fn 5 -fs 2 -tl 256 -tn 1000 -o Random_F5_2.csv
